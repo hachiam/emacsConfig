@@ -8,9 +8,9 @@
      "2b0fcc7cc9be4c09ec5c75405260a85e41691abb1ee28d29fcd5521e4fca575b"
      default))
  '(package-selected-packages
-   '(ace-window autothemer counsel dashboard evil-collection nerd-icons
-     nyan-mode orderless org-roam-ui paren-face rainbow-delimiters
-     shrink-path slime-company smartparens solarized-themes vertico
+   '(ace-window autothemer counsel dashboard evil-collection magit
+     nerd-icons nyan-mode orderless org-roam-ui paren-face
+     rainbow-delimiters shrink-path slime-company smartparens vertico
      zenburn-theme)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

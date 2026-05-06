@@ -107,18 +107,6 @@
 (use-package swiper
   :bind ("C-s" . swiper))
 
-;;; ==================== Evil ====================
-(use-package evil
-  :init
-  (setq evil-want-C-u-scroll t
-        evil-want-integration t
-        evil-want-keybinding nil)
-  :config
-  (evil-mode 1))
-
-(use-package evil-collection
-  :after evil
-  :config (evil-collection-init))
 
 ;;; ==================== Company 补全 ====================
 (use-package company
@@ -171,6 +159,18 @@
 	     (org-roam-ui-sync-theme t);;同步emacs主题
 	     (org-roam-ui-follow t)
 	     (org-roam-ui-update-on-save t)) 
+;;; ==================== magit =========================
+(use-package magit
+	     :ensure t
+	     :config
+
+	     ;; 优化magit在windows10上的性能
+	     (setq magit-refresh-status-buffer t)
+	     (setq magit-auto-revert-mode nil)
+	     )
+(let ((git-path "c:/personalProgram/Git/bin/git.exe"))
+  (when (file-exists-p git-path)
+    (setq magit-git-executable git-path)))
 ;;; ==================== 代码格式化 ====================
 (setq default-tab-width 2
       lisp-body-indent 2
