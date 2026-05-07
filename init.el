@@ -60,10 +60,7 @@
 	     (completion-category-defaults nil)
 	     (completion-category-overrides '((file (styles partial-completion)))))
 ;; 设置主题
-(use-package zenburn-theme
-	     :ensure t
-	     :config
-	     (load-theme 'zenburn t))
+(load-theme 'wombat t)
 
 (use-package nyan-mode
 	     :ensure t
@@ -80,6 +77,8 @@
 				     (agenda    . 5)
 				     ))
 	     )
+
+
 ;;; ==================== 行号 + 当前行高亮 ====================
 (global-display-line-numbers-mode 1)
 (setq display-line-numbers-type 'relative)
