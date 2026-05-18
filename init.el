@@ -63,7 +63,7 @@
 (use-package dracula-theme
 	     :ensure t
 	     :config
-	     (load-theme 'dracula-light t))
+	     (load-theme 'dracula t))
 
 
 (use-package nyan-mode
