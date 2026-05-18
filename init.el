@@ -118,7 +118,9 @@
 
 ;;; ==================== 括号自动补全 + 彩虹括号 ====================
 (use-package smartparens
-  :config (smartparens-global-mode t))
+	     :config
+	     (smartparens-global-mode t)
+	     (sp-pair "\'" nil :actions :rem))
 
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
