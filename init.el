@@ -60,7 +60,11 @@
 	     (completion-category-defaults nil)
 	     (completion-category-overrides '((file (styles partial-completion)))))
 ;; 设置主题
-(load-theme 'wombat t)
+(use-package dracula-theme
+	     :ensure t
+	     :config
+	     (load-theme 'dracula-light t))
+
 
 (use-package nyan-mode
 	     :ensure t

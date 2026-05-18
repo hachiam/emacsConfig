@@ -8,9 +8,9 @@
      "2b0fcc7cc9be4c09ec5c75405260a85e41691abb1ee28d29fcd5521e4fca575b"
      default))
  '(package-selected-packages
-   '(ace-window autothemer counsel dashboard evil-collection magit
-     nyan-mode orderless org-roam-ui paren-face rainbow-delimiters
-     shrink-path slime-company smartparens vertico)))
+   '(ace-window autothemer counsel dashboard dracula-theme
+     evil-collection magit nyan-mode orderless org-roam-ui paren-face
+     rainbow-delimiters shrink-path slime-company smartparens vertico)))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
